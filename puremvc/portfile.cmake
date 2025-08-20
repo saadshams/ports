@@ -12,6 +12,7 @@ set(SOURCE_PATH "/Users/sshams/Documents/saadshams/puremvc-c-multicore-framework
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
 vcpkg_cmake_install()
+#vcpkg_cmake_config_fixup(PACKAGE_NAME "collection" CONFIG_PATH "lib/cmake/collection")
 vcpkg_cmake_config_fixup(PACKAGE_NAME "puremvc" CONFIG_PATH "lib/cmake/puremvc")
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")

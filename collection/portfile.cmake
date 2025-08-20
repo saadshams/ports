@@ -1,14 +1,14 @@
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 
-#vcpkg_from_github(
-#    OUT_SOURCE_PATH SOURCE_PATH
-#    REPO open-source-patterns/collection
-#    REF "${VERSION}"
-#    SHA512 cfa5f79d2935704a10a95b0f3ebacf73e500425ea38f55e0c93f3c59a8b7c336164f899b9462aa60c6c878589992efa5a3efb0d414cc0f357d7dc269cccb215f
-#    HEAD_REF main
-#)
+vcpkg_from_github(
+        OUT_SOURCE_PATH SOURCE_PATH
+        REPO open-source-patterns/collection
+        REF "${VERSION}"
+        SHA512 58222ec24da5414852f66dc3afe12396cfa92671ef06b67a7da51e2fab4673e8c133b4b4d3517218c7aa5172d59aa6347901f2863044230e91e7eec946023749
+        HEAD_REF main
+)
 
-set(SOURCE_PATH "/Users/sshams/Documents/open-source-patterns/collection")
+#set(SOURCE_PATH "/Users/sshams/Documents/open-source-patterns/collection")
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
 vcpkg_cmake_install()
